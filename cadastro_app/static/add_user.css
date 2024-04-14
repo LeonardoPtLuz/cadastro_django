@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Adicionar Usuário</title>
-    <style>
         /* Estilizando o link como um botão */
         .save-button {
             display: inline-block;
@@ -18,14 +12,3 @@
         .save-button:hover {
             background-color: #00d62e;
         }
-    </style>
-</head>
-<body>
-    <h1>Adicionar Usuário</h1>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save-button">Salvar</button>
-    </form>
-</body>
-</html>
